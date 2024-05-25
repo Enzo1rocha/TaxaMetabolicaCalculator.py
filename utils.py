@@ -67,15 +67,15 @@ def atividades_fisicas():
   if fisica == "atleta":
     tmb = tmb*1.9
   
-print("Olá, Sou uma Calculadora de Metabolismo Basal\nInforme a Formula Escolhida\n{}\n1 - Harris-Benedict\n{}\n2 - Mifflin-St-Jeor\n{}\nObservacão = Digite o Valor Corresponde".format("="*30, "-"*30, "="*30))
 idade, peso, altura, genero, fisica = dados_usuario()
+print("Olá, Sou uma Calculadora de Metabolismo Basal\nInforme a Formula Escolhida\n{}\n1 - Harris-Benedict\n{}\n2 - Mifflin-St-Jeor\n{}\nObservacão = Digite o Valor Corresponde".format("="*30, "-"*30, "="*30))
 while True:
   escolha_formula = inteiro_input("Valor Correspondente:")
   if escolha_formula == 1:
-    harris_benedict()
+    harris_benedict(genero, peso, altura, idade)
     break
   if escolha_formula == 2:
-    miflin_jeor()
+    miflin_jeor(genero, peso, altura, idade)
     break
   else:
     print("Digite O Valor de Uma Das Opcões Listadas")
