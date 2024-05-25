@@ -1,1 +1,1 @@
-from utils.py import dados_usuarios
+from utils import dados_usuario
