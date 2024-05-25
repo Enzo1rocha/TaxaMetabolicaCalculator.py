@@ -24,13 +24,12 @@ def dados_usuario():
   idade = inteiro_input("Informe Sua Idade:")
   peso = decimal_input("Informe Seu Peso (Kg):")
   altura = decimal_input("Informe Sua Altura (Cm):")
-  genero = str(input("Qual Seu Gênero? Homem/Mulher")).strip.lower
+  genero = str(input("Qual Seu Gênero? Homem/Mulher")).strip().lower()
   while True:
-    fisica = str(input("")).srip().lower()
+    fisica = str(input("Escolha Seu Nivel de Atividade Fisica")).lower()
     if fisica in ["taxa metabolica", "sedentario", "leve", "moderado", "intenso", "atleta"]:
       break
     else:
       print("Escolha Uma das Opções Listadas")
-  
-dados_usuario()
+  return idade, peso, altura, genero, fisica
   
