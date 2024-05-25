@@ -32,3 +32,5 @@ def dados_usuario():
     else:
       print("Escolha Uma das Opções Listadas")
   
+dados_usuario()
+  
